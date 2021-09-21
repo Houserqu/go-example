@@ -15,7 +15,7 @@ func RunViper() {
 
 	err := viper.ReadInConfig() // 搜索并读取配置文件
 	if err != nil {             // 处理错误
-		panic(fmt.Errorf("Fatal error config file: %s \n", err))
+		panic(fmt.Errorf("fatal error config file: %s", err))
 	}
 
 	viper.SetDefault("NAME", "hahaha")
